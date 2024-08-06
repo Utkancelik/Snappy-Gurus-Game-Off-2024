@@ -29,7 +29,6 @@ public class Level1GameManager : MonoBehaviour
     private void InitializeGameManager()
     {
         PlayerScore = 0;
-        ScoreToCollect = 10;
     }
 
     public void UpdatePlayerScore()
