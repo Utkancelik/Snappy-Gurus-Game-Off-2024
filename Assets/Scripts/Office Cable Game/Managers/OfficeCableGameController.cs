@@ -10,7 +10,7 @@ public class OfficeCableGameController : MonoBehaviour
     [SerializeField] private GameObject _repairZoneIndicator; // Tamir bölgesini işaret edecek obje
     [SerializeField] public GameObject _endRepairGameButton;
     
-    private bool _isBlackedOut = false;
+    public bool _isBlackedOut { get; private set; } = false;
 
     private void Start()
     {
@@ -37,8 +37,9 @@ public class OfficeCableGameController : MonoBehaviour
         _officeBG.GetComponent<SpriteRenderer>().color = new Color(0.27f, 0.27f, 0.27f, 1f); // Karartma
 
         OfficeCharacterController.OnBlackOut?.Invoke();
-
-        _repairZoneIndicator.SetActive(true); // Tamir bölgesini işaret et
+        AlexMovement.OnBlackOut?.Invoke();
+        
+        _repairZoneIndicator.SetActive(true);
     }
 
     public void CheckElectricFixed()
@@ -55,6 +56,7 @@ public class OfficeCableGameController : MonoBehaviour
         _officeBG.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f); // Aydınlatma
 
         OfficeCharacterController.OnRepairComplete?.Invoke();
+        AlexMovement.OnEndBlackOut?.Invoke();
     }
 
     public void StartRepairGame()

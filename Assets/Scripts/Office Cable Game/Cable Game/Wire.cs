@@ -6,8 +6,12 @@ public class Wire : MonoBehaviour
 {
     public SpriteRenderer wireEnd;
     public GameObject lightOn;
+    public GameObject correctEffect; // Doğru birleşme efekti için eklenen GameObject
+    public GameObject wrongEffect;   // Yanlış birleşme efekti için eklenen GameObject
     Vector3 startPoint;
     Vector3 startPosition;
+    private bool isDragging = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +21,13 @@ public class Wire : MonoBehaviour
 
     private void OnMouseDrag()
     {
+        if (!isDragging)
+        {
+            // If not allowed to drag, reset position and return
+            UpdateWire(startPosition);
+            return;
+        }
+
         // mouse position to world point
         Vector3 newPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         newPosition.z = 0;
@@ -25,21 +36,42 @@ public class Wire : MonoBehaviour
         Collider2D[] colliders = Physics2D.OverlapCircleAll(newPosition, .2f);
         foreach (Collider2D collider in colliders)
         {
-            // make sure not my own collider
-            if (collider.gameObject != gameObject)
+            // make sure the other object is a wire and not my own collider
+            Wire otherWire = collider.GetComponent<Wire>();
+            if (otherWire != null && collider.gameObject != gameObject)
             {
-                // update wire to the connection point position
-                UpdateWire(collider.transform.position);
-
                 // check if the wires are same color
                 if (transform.parent.name.Equals(collider.transform.parent.name))
                 {
+                    // update wire to the connection point position
+                    UpdateWire(collider.transform.position);
+
                     // count connection
                     Main.Instance.SwitchChange(1);
 
+                    // play correct effect
+                    if (correctEffect != null)
+                    {
+                        Instantiate(correctEffect, collider.transform.position, Quaternion.identity);
+                    }
+
                     // finish step
-                    collider.GetComponent<Wire>()?.Done();
+                    otherWire.Done();
                     Done();
+                }
+                else
+                {
+                    // play wrong effect
+                    if (wrongEffect != null)
+                    {
+                        Instantiate(wrongEffect, newPosition, Quaternion.identity);
+                    }
+
+                    // prevent further dragging
+                    isDragging = false;
+
+                    // reset wire position
+                    UpdateWire(startPosition);
                 }
                 return;
             }
@@ -54,12 +86,15 @@ public class Wire : MonoBehaviour
         // turn on light
         lightOn.SetActive(true);
 
-        // destory the script
+        // destroy the script
         Destroy(this);
     }
 
     private void OnMouseUp()
     {
+        // reset dragging flag
+        isDragging = true;
+
         // reset wire position
         UpdateWire(startPosition);
     }
@@ -76,6 +111,5 @@ public class Wire : MonoBehaviour
         // update scale
         float dist = Vector2.Distance(startPoint, newPosition);
         wireEnd.size = new Vector2(dist, wireEnd.size.y);
-
     }
- }
+}
