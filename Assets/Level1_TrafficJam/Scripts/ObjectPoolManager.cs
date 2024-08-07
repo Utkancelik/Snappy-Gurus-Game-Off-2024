@@ -50,8 +50,6 @@ public class ObjectPoolManager : MonoBehaviour
             objectToSpawn.transform.rotation = rotation;
         }
 
-        poolDictionary[tag].Enqueue(objectToSpawn);
-
         return objectToSpawn;
     }
 
