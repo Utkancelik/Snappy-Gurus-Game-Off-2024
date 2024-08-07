@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - RepairZone
   layers:
   - Default
   - TransparentFX
@@ -40,4 +41,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2334158211
+    locked: 0
+  - name: Characters
+    uniqueID: 3199371703
+    locked: 0
+  - name: Indicators
+    uniqueID: 3025092873
+    locked: 0
+  - name: InPuzzleObjects
+    uniqueID: 1126922147
     locked: 0
