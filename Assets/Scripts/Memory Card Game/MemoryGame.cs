@@ -10,13 +10,14 @@ public class MemoryGame : MonoBehaviour
     public Sprite cardBack;
     public List<Sprite> cardImages;
     public RectTransform tablePanel;
-    public GameObject tableSlotPrefab; 
+    public GameObject tableSlotPrefab;
 
     private List<GameObject> cards = new List<GameObject>();
     private List<Sprite> gameImages = new List<Sprite>();
     private List<Button> selectedCards = new List<Button>();
     private List<RectTransform> tableSlots = new List<RectTransform>();
     private bool canClick = true;
+    private int filledSlotsCount = 0;
 
     void Start()
     {
@@ -52,7 +53,6 @@ public class MemoryGame : MonoBehaviour
             cardButton.onClick.AddListener(() => OnCardClick(cardButton, gameImages[index]));
             cards.Add(newCard);
         }
-
     }
 
     void InitializeTableSlots()
@@ -130,13 +130,29 @@ public class MemoryGame : MonoBehaviour
                 GameObject newImage = new GameObject("MatchedCard");
                 newImage.transform.SetParent(slot);
                 RectTransform imageRectTransform = newImage.AddComponent<RectTransform>();
-                imageRectTransform.localScale = Vector3.one; // Ölçeği birim yap
-                imageRectTransform.anchoredPosition = Vector2.zero; // Yerleştirme pozisyonu sıfırlanıyor
-                imageRectTransform.sizeDelta = slot.sizeDelta; // Slot boyutunu al
+                imageRectTransform.localScale = Vector3.one;
+                imageRectTransform.anchoredPosition = Vector2.zero;
+                imageRectTransform.sizeDelta = slot.sizeDelta;
                 Image imageComponent = newImage.AddComponent<Image>();
                 imageComponent.sprite = matchedSprite;
+                filledSlotsCount++;
+                CheckGameCompletion();
                 break;
             }
         }
     }
+
+    void CheckGameCompletion()
+    {
+        if (filledSlotsCount == tableSlots.Count)
+        {
+            // Oyunun kazanıldığını bildir
+            Debug.Log("Tebrikler! Oyunu kazandınız!");
+
+            // Alex'in kızgınlığını artır
+            EmotionController.Instance.UpdatePlayerPrefs(EmotionController.Character.Alex, EmotionController.EmotionState.Anger);
+        }
+    }
+
+
 }
