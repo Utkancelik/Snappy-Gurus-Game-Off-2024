@@ -188,7 +188,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: bd3cb4af8406d4436a2ae8c2aafe1f8d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 42d6b03cd28f0ec4fb622c92f0742ae0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -278,8 +278,8 @@ Transform:
   m_GameObject: {fileID: 3165264130098178390}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.105, y: 0.028, z: 0}
+  m_LocalScale: {x: 3.0834596, y: 3.0834596, z: 3.0834596}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1281901321684449860}
@@ -325,7 +325,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: -2102376532, guid: f687fb66187871a4c87f44517e07a830, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -396,6 +396,7 @@ MonoBehaviour:
   panelFadeDuration: 1
   cardRevealDelay: 0.1
   backgroundFadeDuration: 1
+  character: 0
 --- !u!114 &8700624820898477027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -413,6 +414,7 @@ MonoBehaviour:
   dialogueText: {fileID: 2350595164703131917}
   cardPanel: {fileID: 1476389533539705679}
   tablePanel: {fileID: 6435423715212681494}
+  _WomenDialogueText: We forgot your order, repeat it!
 --- !u!1 &4222059904666837540
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,12 +440,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4222059904666837540}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4878971040833534952}
+  m_Father: {fileID: 6646834643623591303}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -924,12 +926,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 3299336276223399362}
   m_Father: {fileID: 4878971040833534952}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.00000023841858, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1439373356593962374
@@ -960,7 +963,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: c7467b8985debf24cb9131c7f55fd79c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1102,13 +1105,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6646834643623591303}
-  - {fileID: 3299336276223399362}
   m_Father: {fileID: 8272090836457943887}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1.42, y: 2.08}
-  m_SizeDelta: {x: 4.7023, y: 1.4496}
+  m_AnchoredPosition: {x: 2.68, y: 3.87}
+  m_SizeDelta: {x: 5.452, y: 3.7562}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &7154929672760459314
 Canvas:

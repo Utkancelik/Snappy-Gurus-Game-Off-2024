@@ -8,7 +8,7 @@ namespace Level
     {
         public static LevelManager Instance;
 
-        [SerializeField] private List<LevelButton> _levelButtons;
+        private List<LevelButton> _levelButtons = new List<LevelButton>();
         LevelIndex _currentLevelIndex = 0;
         [SerializeField] private LevelsScriptableObject _levelsSO;
 
@@ -41,10 +41,7 @@ namespace Level
 
         private void Start()
         {
-            foreach (var button in _levelButtons)
-            {
-                button.OnLevelButtonClicked += LoadGameScene;
-            }
+            InitializeLevelButtons();
         }
 
         private void LoadGameScene(LevelIndex currentLevelIndex)
@@ -101,6 +98,22 @@ namespace Level
         private int GetCurrentLevel()
         {
             return PlayerPrefs.GetInt("CurrentLevelIndex", 0);
+        }
+
+        public void InitializeLevelButtons()
+        {
+            _levelButtons.Clear();
+            GameObject panel = GameObject.Find("Panel");
+            Debug.Log(panel.name);
+            foreach (Transform level in panel.transform)
+            {
+                LevelButton levelButton = level.GetComponent<LevelButton>();
+                if (levelButton != null)
+                {
+                    _levelButtons.Add(levelButton);
+                    levelButton.OnLevelButtonClicked += LoadGameScene;
+                }
+            }
         }
     }
 }

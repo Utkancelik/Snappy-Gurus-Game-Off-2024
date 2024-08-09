@@ -516,6 +516,7 @@ MonoBehaviour:
   dialogueText: {fileID: 4011796306186933562}
   cardPanel: {fileID: 7296745590072681267}
   tablePanel: {fileID: 3300537214361527605}
+  _WomenDialogueText: What do you want to eat husband?
 --- !u!1 &3602788680230662490
 GameObject:
   m_ObjectHideFlags: 0

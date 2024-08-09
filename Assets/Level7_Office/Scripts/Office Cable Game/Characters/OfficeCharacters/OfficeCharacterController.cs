@@ -10,6 +10,8 @@ public class OfficeCharacterController : MonoBehaviour
     [SerializeField] private Sprite defaultSprite;
     [SerializeField] private float jumpHeight = 2f; 
     [SerializeField] private float jumpDuration = 0.5f;
+    [SerializeField] private string[] blackOutDialogues;
+    [SerializeField] private string[] celebrationDialogues;
 
     public static Action OnBlackOut;
     public static Action OnRepairComplete;
@@ -19,7 +21,6 @@ public class OfficeCharacterController : MonoBehaviour
 
     private Animator _animator;
     private static readonly int CelebrateTrigger = Animator.StringToHash("Celebrate");
-
 
     private void Start()
     {
@@ -55,17 +56,15 @@ public class OfficeCharacterController : MonoBehaviour
         if (FindObjectOfType<OfficeCableGameController>()._isBlackedOut)
         {
             yield return new WaitForSeconds(UnityEngine.Random.Range(0.5f, 3f));
-            characterText.text = GetRandomBlackOutCharacterDialogue();
+            characterText.text = GetRandomDialogue(blackOutDialogues);
             yield return new WaitForSeconds(UnityEngine.Random.Range(0.5f, 3f));
             characterText.text = "";
             StartCoroutine(ShowBlackOutDialogueCoroutine());
         }
     }
 
-    private string GetRandomBlackOutCharacterDialogue()
+    private string GetRandomDialogue(string[] dialogues)
     {
-        var dialogues = new[]
-            { "Come on!", "Fix this!", "AAA AA","Really?" };
         return dialogues[UnityEngine.Random.Range(0, dialogues.Length)];
     }
 
@@ -76,16 +75,9 @@ public class OfficeCharacterController : MonoBehaviour
 
     private void Celebrate()
     {
-        characterText.text = GetRandomCelebrationDialogue();
+        characterText.text = GetRandomDialogue(celebrationDialogues);
         spriteRenderer.sprite = celebrateSprite;
         _animator.SetTrigger(CelebrateTrigger);
         Invoke(nameof(Celebrate), 1f);
-    }
-
-    private string GetRandomCelebrationDialogue()
-    {
-        var dialogues = new[]
-            { "Yay!", "Finally!", "Thanks Alex!", "Boohoo!", "Great job!" };
-        return dialogues[UnityEngine.Random.Range(0, dialogues.Length)];
     }
 }

@@ -12,6 +12,7 @@ public class MemoryGameController : MonoBehaviour
     public GameObject tablePanel;
     private static readonly int Walk = Animator.StringToHash("Walk");
 
+    [SerializeField] private string _WomenDialogueText;
     void Start()
     {
         StartCoroutine(StartGameSequence());
@@ -25,7 +26,7 @@ public class MemoryGameController : MonoBehaviour
 
         // diyalog için balon çıkar
         chefCharacter.transform.Find("Canvas/DialogueBaloon").gameObject.SetActive(true);
-        dialogueText.text = "Siparişiniz karıştı, lütfen tekrar sipariş verin.";
+        dialogueText.text = $"{_WomenDialogueText}";
         dialogueText.gameObject.SetActive(true);
 
         yield return new WaitForSeconds(5); // diyalog süresi

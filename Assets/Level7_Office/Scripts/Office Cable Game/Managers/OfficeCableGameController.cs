@@ -1,16 +1,19 @@
 using System.Collections;
+using Level;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class OfficeCableGameController : MonoBehaviour
 {
-    [SerializeField] private GameObject _officeBG; // karartılacak sonra aydınlatılacak olan background resmi
+    [SerializeField] private GameObject _officeBG; // Karartılacak sonra aydınlatılacak olan background resmi
     [SerializeField] private GameObject _repairGameWindow;
     [SerializeField] private GameObject _repairZoneIndicator; // Tamir bölgesini işaret edecek obje
     [SerializeField] public GameObject _endRepairGameButton;
-    
+    public EmotionController.Character character;
     public bool _isBlackedOut { get; private set; } = false;
+
+    [SerializeField] private GameObject[] levelSpecificObjects;
 
     private void Start()
     {
@@ -20,6 +23,10 @@ public class OfficeCableGameController : MonoBehaviour
 
     private void DeactivateNeccessaryObjectsAtTheBeginning()
     {
+        foreach (var obj in levelSpecificObjects)
+        {
+            obj.SetActive(false);
+        }
         _repairGameWindow.SetActive(false);
         _repairZoneIndicator.SetActive(false);
         _endRepairGameButton.SetActive(false);
@@ -37,9 +44,14 @@ public class OfficeCableGameController : MonoBehaviour
         _officeBG.GetComponent<SpriteRenderer>().color = new Color(0.27f, 0.27f, 0.27f, 1f); // Karartma
 
         OfficeCharacterController.OnBlackOut?.Invoke();
-        AlexMovement.OnBlackOut?.Invoke();
+        CharacterMovement.OnBlackOut?.Invoke();
         
         _repairZoneIndicator.SetActive(true);
+
+        foreach (var obj in levelSpecificObjects)
+        {
+            obj.SetActive(true);
+        }
     }
 
     public void CheckElectricFixed()
@@ -56,7 +68,9 @@ public class OfficeCableGameController : MonoBehaviour
         _officeBG.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f); // Aydınlatma
 
         OfficeCharacterController.OnRepairComplete?.Invoke();
-        AlexMovement.OnEndBlackOut?.Invoke();
+        CharacterMovement.OnEndBlackOut?.Invoke();
+
+        StartCoroutine(TriggerWin());
     }
 
     public void StartRepairGame()
@@ -70,5 +84,12 @@ public class OfficeCableGameController : MonoBehaviour
     {
         _repairGameWindow.SetActive(false);
         CheckElectricFixed();
+    }
+
+    IEnumerator TriggerWin()
+    {
+        LevelManager.Instance.LevelCompleted(character);
+        yield return new WaitForSeconds(2f);
+        UIManager.Instance.ToggleWinMenu();
     }
 }
