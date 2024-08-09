@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Level;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,10 +8,16 @@ public class MemoryGame : MonoBehaviour
 {
     public GameObject cardPrefab;
     public RectTransform cardPanel;
+    public CanvasGroup cardPanelCanvasGroup;
+    public Image background;
     public Sprite cardBack;
     public List<Sprite> cardImages;
     public RectTransform tablePanel;
     public GameObject tableSlotPrefab;
+    public float panelFadeDuration = 1f;
+    public float cardRevealDelay = 0.1f;
+    public float backgroundFadeDuration = 1f;
+    public EmotionController.Character character;
 
     private List<GameObject> cards = new List<GameObject>();
     private List<Sprite> gameImages = new List<Sprite>();
@@ -21,6 +28,7 @@ public class MemoryGame : MonoBehaviour
 
     void Start()
     {
+        cardPanelCanvasGroup.alpha = 0;
         cardPanel.gameObject.SetActive(false);
         tablePanel.gameObject.SetActive(false);
     }
@@ -29,8 +37,40 @@ public class MemoryGame : MonoBehaviour
     {
         InitializeCards();
         InitializeTableSlots();
+        StartCoroutine(FadeInPanelAndDarkenBackground());
+    }
+
+    IEnumerator FadeInPanelAndDarkenBackground()
+    {
         cardPanel.gameObject.SetActive(true);
         tablePanel.gameObject.SetActive(true);
+
+        float elapsed = 0f;
+        Color originalColor = background.color;
+        Color targetColor = originalColor * new Color(0.5f, 0.5f, 0.5f, 1f);
+
+        while (elapsed < panelFadeDuration)
+        {
+            elapsed += Time.deltaTime;
+            float alpha = Mathf.Clamp01(elapsed / panelFadeDuration);
+            cardPanelCanvasGroup.alpha = alpha;
+            background.color = Color.Lerp(originalColor, targetColor, alpha);
+            yield return null;
+        }
+
+        cardPanelCanvasGroup.alpha = 1f;
+        background.color = targetColor;
+
+        StartCoroutine(RevealCards());
+    }
+
+    IEnumerator RevealCards()
+    {
+        foreach (var card in cards)
+        {
+            card.SetActive(true);
+            yield return new WaitForSeconds(cardRevealDelay);
+        }
     }
 
     void InitializeCards()
@@ -46,6 +86,7 @@ public class MemoryGame : MonoBehaviour
         for (int i = 0; i < gameImages.Count; i++)
         {
             GameObject newCard = Instantiate(cardPrefab, cardPanel);
+            newCard.SetActive(false);
             Button cardButton = newCard.GetComponent<Button>();
             Image cardImage = newCard.transform.GetChild(0).GetComponent<Image>();
             cardImage.sprite = cardBack;
@@ -146,13 +187,9 @@ public class MemoryGame : MonoBehaviour
     {
         if (filledSlotsCount == tableSlots.Count)
         {
-            // Oyunun kazanıldığını bildir
             Debug.Log("Tebrikler! Oyunu kazandınız!");
 
-            // Alex'in kızgınlığını artır
-            EmotionController.Instance.UpdatePlayerPrefs(EmotionController.Character.Alex, EmotionController.EmotionState.Anger);
+            LevelManager.Instance.LevelCompleted(character);
         }
     }
-
-
 }
