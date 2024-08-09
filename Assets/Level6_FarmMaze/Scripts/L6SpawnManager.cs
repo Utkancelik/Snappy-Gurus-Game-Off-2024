@@ -9,16 +9,16 @@ public class L6SpawnManager : MonoBehaviour
     public Transform FruitsBase;
     
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         InitializeEnemyPrefabs();
     }
 
     private void InitializeEnemyPrefabs()
     {
-        for (float x = -6.5f; x <= 6.5; x += 1.0f)
+        for (float x = -6.5f; x <= 6.5; x += 2.0f)
         {
-            for (float y = -6.5f; y <= 6.5; y += 1.0f)
+            for (float y = -6.5f; y <= 6.5; y += 2.0f)
             {
                 if (Random.Range(0, 3) == 1)
                 {
@@ -27,11 +27,5 @@ public class L6SpawnManager : MonoBehaviour
                 }
             }
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

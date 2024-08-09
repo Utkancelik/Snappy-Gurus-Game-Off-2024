@@ -937,7 +937,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  duration: 1
+  _fruitsCount: {fileID: 8084724386122773255}
+  _childCount: 0
 --- !u!50 &8535695100253818605
 Rigidbody2D:
   serializedVersion: 4

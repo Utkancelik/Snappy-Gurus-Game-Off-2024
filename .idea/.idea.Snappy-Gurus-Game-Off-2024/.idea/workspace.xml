@@ -6,67 +6,29 @@
   <component name="ChangeListManager">
     <list default="true" id="9dc53195-7007-433e-908c-da0edae80280" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Snappy-Gurus-Game-Off-2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Snappy-Gurus-Game-Off-2024/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Layers.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Layers.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/ScriptableObjects/PoolListScriptableObject.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/ScriptableObjects/PoolListScriptableObject.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/ScriptableObjects/PoolScriptableObject.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/ScriptableObjects/PoolScriptableObject.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/ScriptableObjects/Pools.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/ScriptableObjects/Pools/Avoidable.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/ScriptableObjects/Pools/Avoidable.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/ScriptableObjects/Pools/Collectable.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/ScriptableObjects/Pools/Collectable.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/ScriptableObjects/Pools/PoolLIst.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/ScriptableObjects/Pools/PoolLIst.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/MazeGeneration.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/MazeGeneration/CellScript.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/MazeGeneration/CellScript.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/MazeGeneration/MazeGenerator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/MazeGeneration/MazeGenerator.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Prefabs/Bullet.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Prefabs/Bullet.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Prefabs/Cell.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Prefabs/Cell.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Prefabs/CornMaze.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Prefabs/CornMaze.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Prefabs/Enemy.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Prefabs/Enemy.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Prefabs/LazerTagMaze.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Prefabs/LazerTagMaze.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Prefabs/Reward.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Prefabs/Reward.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Prefabs/Wall.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Prefabs/Wall.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Scripts/BulletController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Scripts/BulletController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Scripts/BulletPool.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Scripts/BulletPool.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Scripts/L5EnemyMovementController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Scripts/L5EnemyMovementController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Scripts/L5PlayerScript.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Scripts/L5PlayerScript.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Scripts/L5PoolList.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Scripts/L5PoolList.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Scripts/L5SpawnManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Scripts/L5SpawnManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Sprites.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Sprites/Cell_Sprite_ici_bos.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Sprites/Cell_Sprite_ici_bos.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Sprites/Screenshot_2024-08-06_at_16.59.36-removebg-preview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Sprites/Screenshot_2024-08-06_at_16.59.36-removebg-preview.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Sprites/Wall_Sprite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5_maze/Sprites/Wall_Sprite.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Maze.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Maze.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Maze.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Maze/NavMesh-NavMesh.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Maze/NavMesh-NavMesh.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TrafficJam.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TrafficJam.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/CollectableMovementController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/L1CollectableMovementController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/CollectableMovementController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/L1CollectableMovementController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/LaneLineController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/L1LaneLineController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/LaneLineController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/L1LaneLineController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/Level1GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/L1GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/Level1GameManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/L1GameManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/Level1PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/L1PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/Level1PlayerController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/L1PlayerController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/Level1UIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/L1UIController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/Level1UIController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/L1UIController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/ObjectPoolManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/ObjectPoolManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/ObstacleMovementController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/L1ObstacleMovementController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/ObstacleMovementController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/L1ObstacleMovementController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/L1SpawnManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/SpawnManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/L1SpawnManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Level2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Level2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/118 sprite effects bundle/15 effects/smoke_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/118 sprite effects bundle/15 effects/smoke_2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UIManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,9 +40,14 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../AssetTryProject/Assets/BrewClimberPrefabs/AssetVersion1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/Level1GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/L1CollectableMovementController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/L1GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/L1PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Level1_TrafficJam/Scripts/L1UIController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Level2_FarmJam/Scripts/L2GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Level2_FarmJam/Scripts/L2PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Level6_FarmMaze/Scripts/L6PlayerScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/79a1904c928a4c2d9eba5ede6e6aa92e469200/9b/4861d00e/CancellationTokenSource.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/79a1904c928a4c2d9eba5ede6e6aa92e469200/9b/4861d00e/CancellationTokenSource.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ea17bb9054f74b2abbece9ab7a92c147175c00/b1/ba9145e4/Vector2Int.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -164,7 +131,8 @@
       <workItem from="1722937508347" duration="4545000" />
       <workItem from="1723015891213" duration="6000" />
       <workItem from="1723015920777" duration="14449000" />
-      <workItem from="1723099926100" duration="5605000" />
+      <workItem from="1723099926100" duration="9076000" />
+      <workItem from="1723189042677" duration="9983000" />
     </task>
     <servers />
   </component>
@@ -187,14 +155,7 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Level5_maze/Scripts/BulletController.cs</url>
           <line>16</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Level5_maze/Scripts/BulletController.cs" containingFunctionPresentation="Method 'Update'">
-            <startOffsets>
-              <option value="427" />
-            </startOffsets>
-            <endOffsets>
-              <option value="485" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="$PROJECT_DIR$/Assets/Level5_maze/Scripts/BulletController.cs" containingFunctionPresentation="Method 'Update'" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

@@ -6,6 +6,7 @@ using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.UIElements;
 
 public class L5PlayerScript : MonoBehaviour
 {
@@ -39,11 +40,9 @@ public class L5PlayerScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        
         if (other.gameObject.layer == (int)Layers.Collectable)
         {
-            Debug.Log("GameOver");
-            Destroy(other.gameObject);
+            UIManager.Instance.ToggleWinMenu();
         }
     }
 
@@ -51,7 +50,7 @@ public class L5PlayerScript : MonoBehaviour
     {
         if (other.gameObject.layer == (int)Layers.Enemy)
         {
-            Debug.Log("GameOver");
+            UIManager.Instance.ToggleLoseMenu();
             Destroy(gameObject);
         }
     }
