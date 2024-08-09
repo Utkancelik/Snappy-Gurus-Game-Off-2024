@@ -1134,6 +1134,7 @@ MonoBehaviour:
   OnScoreChange:
     m_PersistentCalls:
       m_Calls: []
+  character: 1
 --- !u!1 &6800435222487531561
 GameObject:
   m_ObjectHideFlags: 0

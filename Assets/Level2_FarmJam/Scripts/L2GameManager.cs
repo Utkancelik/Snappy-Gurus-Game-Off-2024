@@ -1,3 +1,4 @@
+using Level;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
@@ -13,7 +14,7 @@ public class L2GameManager : MonoBehaviour
     public bool IsGameOver;
     public UnityEvent OnGameOver;
     public UnityEvent OnScoreChange;
-
+    public EmotionController.Character character;
     void Awake()
     {
         if (Instance != null && Instance != this)
@@ -43,6 +44,7 @@ public class L2GameManager : MonoBehaviour
     
     public void TriggerGameOver()
     {
+        LevelManager.Instance.LevelCompleted(character);
         UIManager.Instance.ToggleWinMenu();
         IsGameOver = true;
         OnGameOver.Invoke();

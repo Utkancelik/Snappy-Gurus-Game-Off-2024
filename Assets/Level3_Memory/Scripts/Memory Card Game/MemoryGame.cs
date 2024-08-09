@@ -190,6 +190,7 @@ public class MemoryGame : MonoBehaviour
             Debug.Log("Tebrikler! Oyunu kazandınız!");
 
             LevelManager.Instance.LevelCompleted(character);
+            UIManager.Instance.ToggleWinMenu();
         }
     }
 }

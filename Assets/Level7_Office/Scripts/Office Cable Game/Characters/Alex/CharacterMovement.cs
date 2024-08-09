@@ -1,11 +1,12 @@
 using System;
 using UnityEngine;
 
-public class AlexMovement : MonoBehaviour
+public class CharacterMovement : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private GameObject flashlight;
-    [SerializeField] private Animator animator; // Animator referansı
+    [SerializeField] private Animator animator;
+    [SerializeField] private string characterName;
 
     public static Action OnBlackOut;
     public static Action OnEndBlackOut;
@@ -73,13 +74,13 @@ public class AlexMovement : MonoBehaviour
         switch (currentState)
         {
             case State.Idle:
-                animator.Play("Alex_Idle");
+                animator.Play(characterName + "_Idle");
                 break;
             case State.LeftWalk:
-                animator.Play("Alex_Walk_L");
+                animator.Play(characterName + "_Walk_L");
                 break;
             case State.RightWalk:
-                animator.Play("Alex_Walk_R");
+                animator.Play(characterName + "_Walk_R");
                 break;
         }
     }

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Level;
 using Level1_TrafficJam;
 using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
@@ -13,6 +14,7 @@ public class L5PlayerScript : MonoBehaviour
     public float moveSpeed = 5f;
     private Vector2 movement;
     [SerializeField] private Transform _barrelTransform;
+    public EmotionController.Character character;
 
     void Update()
     {
@@ -42,6 +44,7 @@ public class L5PlayerScript : MonoBehaviour
     {
         if (other.gameObject.layer == (int)Layers.Collectable)
         {
+            LevelManager.Instance.LevelCompleted(character);
             UIManager.Instance.ToggleWinMenu();
         }
     }

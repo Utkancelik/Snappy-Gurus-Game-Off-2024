@@ -1,17 +1,14 @@
-using System.Collections;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class MainMenuUIController : MonoBehaviour
 {
     [System.Serializable]
     public class CharacterUI
     {
-        public Image happinessImage;
-        public TMP_Text happinessText;
-        public Image angerImage;
-        public TMP_Text angerText;
+        public UnityEngine.UI.Image happinessImage;
+        public TMPro.TMP_Text happinessText;
+        public UnityEngine.UI.Image angerImage;
+        public TMPro.TMP_Text angerText;
     }
 
     public CharacterUI alexUI;
@@ -19,7 +16,10 @@ public class MainMenuUIController : MonoBehaviour
 
     private void Start()
     {
-        // İlk değerleri al ve sakla
+        if (Level.LevelManager.Instance != null)
+        {
+            Level.LevelManager.Instance.InitializeLevelButtons();
+        }
         UpdateEmotionUI();
     }
 
@@ -35,7 +35,7 @@ public class MainMenuUIController : MonoBehaviour
         UpdateEmotionValue(character, EmotionController.EmotionState.Anger, characterUI.angerText);
     }
 
-    private void UpdateEmotionValue(EmotionController.Character character, EmotionController.EmotionState emotionState, TMP_Text textComponent)
+    private void UpdateEmotionValue(EmotionController.Character character, EmotionController.EmotionState emotionState, TMPro.TMP_Text textComponent)
     {
         int value = EmotionController.Instance.GetEmotionValue(character, emotionState);
         textComponent.text = $"{value}";
@@ -47,7 +47,7 @@ public class MainMenuUIController : MonoBehaviour
         }
     }
 
-    private IEnumerator PlayPulseEffect(TMP_Text textComponent)
+    private System.Collections.IEnumerator PlayPulseEffect(TMPro.TMP_Text textComponent)
     {
         float duration = 2f;
         float elapsed = 0f;
@@ -55,7 +55,7 @@ public class MainMenuUIController : MonoBehaviour
 
         while (elapsed < duration)
         {
-            elapsed += Time.deltaTime;
+            elapsed += UnityEngine.Time.deltaTime;
             float scale = Mathf.Lerp(1f, 2f, Mathf.PingPong(elapsed * 2f, 1f));
             textComponent.transform.localScale = originalScale * scale;
             yield return null;
@@ -63,5 +63,4 @@ public class MainMenuUIController : MonoBehaviour
 
         textComponent.transform.localScale = originalScale;
     }
-
 }

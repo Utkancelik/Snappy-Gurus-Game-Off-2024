@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using Level;
 using Level1_TrafficJam;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
@@ -14,6 +15,7 @@ public class L6PlayerScript : MonoBehaviour
     private Vector2 movement;
     [SerializeField] private Transform _fruitsCount;
     [SerializeField] private int _childCount;
+    public EmotionController.Character character;
 
     private void Start()
     {
@@ -48,8 +50,12 @@ public class L6PlayerScript : MonoBehaviour
         {
             Destroy(other.gameObject);
         }
-        
-        if(_childCount <= 0)
+
+        if (_childCount <= 0)
+        {
             UIManager.Instance.ToggleWinMenu();
+            LevelManager.Instance.LevelCompleted(character);
+        }
+            
     }
 }

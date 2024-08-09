@@ -939,6 +939,7 @@ MonoBehaviour:
   moveSpeed: 5
   _fruitsCount: {fileID: 8084724386122773255}
   _childCount: 0
+  character: 1
 --- !u!50 &8535695100253818605
 Rigidbody2D:
   serializedVersion: 4
