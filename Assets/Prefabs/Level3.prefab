@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4655073547359928509}
   - component: {fileID: 693063167988696053}
   - component: {fileID: 6762844091685050925}
+  - component: {fileID: 2507124892806622335}
   m_Layer: 0
   m_Name: Panel_Cards
   m_TagString: Untagged
@@ -100,6 +101,18 @@ MonoBehaviour:
   m_Spacing: {x: 25, y: 60}
   m_Constraint: 2
   m_ConstraintCount: 2
+--- !u!225 &2507124892806622335
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476389533539705679}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1641170851728329755
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,6 +383,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardPrefab: {fileID: 1905737744886056830, guid: a75a5da442a378a4db4ba4e4efe2df10, type: 3}
   cardPanel: {fileID: 4070993127733282276}
+  cardPanelCanvasGroup: {fileID: 2507124892806622335}
+  background: {fileID: 5543111106048294011}
   cardBack: {fileID: 21300000, guid: ac94e42e7236cc24293751c6e87e1715, type: 3}
   cardImages:
   - {fileID: 21300000, guid: 947dc094b29ab1b4585f30e153d9bb3a, type: 3}
@@ -378,6 +393,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 86824dfc893fd084e991bce25dc4363c, type: 3}
   tablePanel: {fileID: 3874034453698792144}
   tableSlotPrefab: {fileID: 1143708461017460542, guid: 75a41179e84cb7449880e39485bc321c, type: 3}
+  panelFadeDuration: 1
+  cardRevealDelay: 0.1
+  backgroundFadeDuration: 1
 --- !u!114 &8700624820898477027
 MonoBehaviour:
   m_ObjectHideFlags: 0

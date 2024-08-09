@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class LevelButton : MonoBehaviour
 {
-    [SerializeField] private LevelIndex levelIndex;
+    [SerializeField] public LevelIndex levelIndex;
     [SerializeField] private Button _button;
     public Action<LevelIndex> OnLevelButtonClicked;
     
