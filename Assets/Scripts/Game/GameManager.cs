@@ -14,5 +14,6 @@ public class GameManager : MonoBehaviour
                 Instantiate(levelInfo.LevelPrefab);
             }
         }
+        Time.timeScale = 1;
     }
 }

@@ -17,7 +17,7 @@ public class L5SpawnManager : MonoBehaviour
     {
         for (float x = -6.5f; x <= 6.5; x += 2.0f)
         {
-            for (float y = -6.5f; y <= 6.5; y += 1.0f)
+            for (float y = -6.5f; y <= 6.5; y += 2.0f)
             {
                 if (Random.Range(0, 3) == 1)
                 {

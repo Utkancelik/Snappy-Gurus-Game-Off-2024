@@ -12,11 +12,16 @@ public class L6PlayerScript : MonoBehaviour
 {
     public float moveSpeed = 5f;
     private Vector2 movement;
-    [SerializeField] private float duration;
+    [SerializeField] private Transform _fruitsCount;
+    [SerializeField] private int _childCount;
+
+    private void Start()
+    {
+        _childCount = _fruitsCount.childCount;
+    }
 
     void Update()
     {
-        
         // Input for movement
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
@@ -37,13 +42,14 @@ public class L6PlayerScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        _childCount -= 1;
+        
         if (other.gameObject.layer == (int)Layers.Collectable)
         {
             Destroy(other.gameObject);
         }
+        
+        if(_childCount <= 0)
+            UIManager.Instance.ToggleWinMenu();
     }
-
-    
-    
-
 }
