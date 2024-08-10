@@ -1,9 +1,6 @@
-using System;
 using System.Collections;
 using Level;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class OfficeCableGameController : MonoBehaviour
 {

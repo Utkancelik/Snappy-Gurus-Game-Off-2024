@@ -1,8 +1,6 @@
-using System;
 using Level;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Serialization;
 
 public class L1GameManager : MonoBehaviour
 {

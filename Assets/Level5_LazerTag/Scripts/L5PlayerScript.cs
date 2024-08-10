@@ -1,13 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using Level;
 using Level1_TrafficJam;
-using Unity.VisualScripting;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using UnityEngine.Serialization;
-using UnityEngine.UIElements;
 
 public class L5PlayerScript : MonoBehaviour
 {

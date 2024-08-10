@@ -1,8 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using Level1_TrafficJam;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class L5EnemyMovementController : MonoBehaviour
 {
