@@ -53,6 +53,7 @@ public class Wire : MonoBehaviour
                     if (correctEffect != null)
                     {
                         Instantiate(correctEffect, collider.transform.position, Quaternion.identity);
+                        AudioManager.Instance.PlaySFXClip("CorrectConnectCable");
                     }
 
                     // finish step
@@ -65,6 +66,7 @@ public class Wire : MonoBehaviour
                     if (wrongEffect != null)
                     {
                         Instantiate(wrongEffect, newPosition, Quaternion.identity);
+                        AudioManager.Instance.PlaySFXClip($"FailConnectCable{Random.Range(1,3)}");
                     }
 
                     // prevent further dragging

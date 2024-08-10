@@ -21,6 +21,7 @@ public class MainMenuUIController : MonoBehaviour
             Level.LevelManager.Instance.InitializeLevelButtons();
         }
         UpdateEmotionUI();
+        AudioManager.Instance.PlayMusicClip("MainMenuTheme");
     }
 
     private void UpdateEmotionUI()

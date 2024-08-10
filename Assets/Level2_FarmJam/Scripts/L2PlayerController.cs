@@ -5,6 +5,7 @@ using Level1_TrafficJam;
 using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class L2PlayerController : MonoBehaviour
 {
@@ -66,6 +67,7 @@ public class L2PlayerController : MonoBehaviour
             _hayIndexToActivate += 1;
             
             L2GameManager.Instance.UpdatePlayerScore();
+            AudioManager.Instance.PlaySFXClip($"Collect{Random.Range(1,3).ToString()}");
             ObjectPoolManager.Instance.ReturnToPool(nameof(Layers.Collectable), other.gameObject);
         }
     }

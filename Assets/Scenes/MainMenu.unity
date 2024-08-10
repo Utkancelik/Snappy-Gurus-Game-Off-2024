@@ -212,6 +212,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 3886650320324531125, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_text
+      value: Seems Alex having fun in luxury restaurant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886650320324531125, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_fontSize
+      value: 32.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886650320324531125, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 32.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405762022250016900, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -34.133
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405762022250016900, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -17.067
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786059218430072139, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_fontStyle
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7132819849700563088, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -292,8 +316,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8275547366010877416, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9058824
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275547366010877416, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275547366010877416, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_Color.r
+      value: 0.43529415
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2298770101732141931, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
@@ -596,6 +633,134 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!1 &218979673
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 218979674}
+  - component: {fileID: 218979675}
+  m_Layer: 0
+  m_Name: SFXSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &218979674
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218979673}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1871650892}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &218979675
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218979673}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &266080499
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,6 +1020,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Panel_L
       objectReference: {fileID: 0}
+    - target: {fileID: 3886650320324531125, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_text
+      value: Seems Alex is bored at office
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405762022250016900, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -34.133
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405762022250016900, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -17.067
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786059218430072139, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_fontStyle
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7132819849700563088, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -935,8 +1116,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8275547366010877416, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_Color.b
+      value: 0.36862746
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275547366010877416, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_Color.g
+      value: 0.34901962
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275547366010877416, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_Color.r
+      value: 0.27450982
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2298770101732141931, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
@@ -1019,9 +1213,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Panel_R
       objectReference: {fileID: 0}
+    - target: {fileID: 3886650320324531125, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
+      propertyPath: m_text
+      value: Seems Sam is frustrated by his old truck
+      objectReference: {fileID: 0}
     - target: {fileID: 5940941334186053866, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.0012817383
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405762022250016900, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -36.935
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405762022250016900, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -18.466
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786059218430072139, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
+      propertyPath: m_fontStyle
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7132819849700563088, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
       propertyPath: m_Pivot.x
@@ -1105,18 +1315,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8275547366010877416, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
       propertyPath: m_Color.b
-      value: 0.4431373
+      value: 0.36862746
       objectReference: {fileID: 0}
     - target: {fileID: 8275547366010877416, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
       propertyPath: m_Color.g
-      value: 0.4156863
+      value: 0.34901962
       objectReference: {fileID: 0}
     - target: {fileID: 8275547366010877416, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
       propertyPath: m_Color.r
-      value: 0.34117648
+      value: 0.27450982
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2298770101732141931, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
@@ -1519,6 +1730,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Panel_R
       objectReference: {fileID: 0}
+    - target: {fileID: 3886650320324531125, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
+      propertyPath: m_text
+      value: Seems Sam feels good at his village
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405762022250016900, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -36.934
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405762022250016900, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -18.467
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786059218430072139, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
+      propertyPath: m_fontStyle
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7132819849700563088, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
       propertyPath: m_Pivot.x
       value: 1
@@ -1599,8 +1826,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8275547366010877416, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9058824
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275547366010877416, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275547366010877416, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
+      propertyPath: m_Color.r
+      value: 0.43529415
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2298770101732141931, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
@@ -2611,6 +2851,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Panel_L
       objectReference: {fileID: 0}
+    - target: {fileID: 3886650320324531125, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_text
+      value: Seems Alex is frustrated in a long lasertag queue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886650320324531125, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886650320324531125, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405762022250016900, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -34.133
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405762022250016900, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -17.067
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786059218430072139, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_fontStyle
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7132819849700563088, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2691,8 +2955,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8275547366010877416, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_Color.b
+      value: 0.36862746
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275547366010877416, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_Color.g
+      value: 0.34901962
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275547366010877416, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_Color.r
+      value: 0.27450982
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2298770101732141931, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
@@ -3227,6 +3504,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Panel_R
       objectReference: {fileID: 0}
+    - target: {fileID: 3886650320324531125, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
+      propertyPath: m_text
+      value: Seems Sam has nothing to eat
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405762022250016900, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -36.935
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405762022250016900, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -18.466
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786059218430072139, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
+      propertyPath: m_fontStyle
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7132819849700563088, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
       propertyPath: m_Pivot.x
       value: 1
@@ -3307,8 +3600,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8275547366010877416, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
+      propertyPath: m_Color.b
+      value: 0.36862746
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275547366010877416, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
+      propertyPath: m_Color.g
+      value: 0.34901962
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275547366010877416, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
+      propertyPath: m_Color.r
+      value: 0.27450982
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2298770101732141931, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
@@ -3366,6 +3672,134 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7132819849700563088, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
   m_PrefabInstance: {fileID: 8530354949281030905}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1502540897
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1502540898}
+  - component: {fileID: 1502540899}
+  m_Layer: 0
+  m_Name: MusicSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1502540898
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502540897}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1871650892}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1502540899
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502540897}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1506344938
 GameObject:
   m_ObjectHideFlags: 0
@@ -3902,6 +4336,92 @@ MonoBehaviour:
     happinessText: {fileID: 1312003333}
     angerImage: {fileID: 2005659512}
     angerText: {fileID: 695187002}
+--- !u!1 &1871650891
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1871650892}
+  - component: {fileID: 1871650893}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1871650892
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871650891}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1502540898}
+  - {fileID: 218979674}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1871650893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871650891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af50b953a641ec14db81151211004465, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSounds:
+  - name: MainMenuTheme
+    clip: {fileID: 8300000, guid: 554b76175e5914eacb4a17e49b262c31, type: 3}
+  - name: Episode1
+    clip: {fileID: 8300000, guid: 619af65d19ef63641915884761d41519, type: 3}
+  - name: Episode2
+    clip: {fileID: 8300000, guid: a0106e3f58e808e47a1f343b3d719755, type: 3}
+  - name: Episode3
+    clip: {fileID: 8300000, guid: 619af65d19ef63641915884761d41519, type: 3}
+  - name: Episode4
+    clip: {fileID: 8300000, guid: 40c196d9a39284c30977ddec382d7e88, type: 3}
+  - name: Episode5
+    clip: {fileID: 8300000, guid: 74057face51404f4a840ffbe93ca81f0, type: 3}
+  - name: Episode6
+    clip: {fileID: 8300000, guid: 97e47d52f68bb8a42b173270825c3cf6, type: 3}
+  - name: Episode7
+    clip: {fileID: 8300000, guid: 46cbb3b6cf5ff47e1a5d2a7e52b02695, type: 3}
+  - name: Episode8
+    clip: {fileID: 8300000, guid: 27e1abd1519e40642bb7c0280fe1b33d, type: 3}
+  - name: Pause
+    clip: {fileID: 8300000, guid: ea00a40a979e4fd45b08759b71799b57, type: 3}
+  - name: Win
+    clip: {fileID: 8300000, guid: acf4ff693dea02a48b9d808f16ef5987, type: 3}
+  - name: Lost
+    clip: {fileID: 8300000, guid: 31e53c64c3dacb24a9c64c60cb936592, type: 3}
+  sfxSounds:
+  - name: Collect1
+    clip: {fileID: 8300000, guid: b9c2c66bfaa0ddf428e90ea7122de98f, type: 3}
+  - name: Collect2
+    clip: {fileID: 8300000, guid: 409230843eb49f44e8334217cd0b3f92, type: 3}
+  - name: FailConnectCable1
+    clip: {fileID: 8300000, guid: 606345ee512222e4b8192cad3a59d2e7, type: 3}
+  - name: FailConnectCable2
+    clip: {fileID: 8300000, guid: 15a49ec7b236dd14fa1d044f5a9499bb, type: 3}
+  - name: CorrectConnectCable
+    clip: {fileID: 8300000, guid: 1388afaf31b18034eb819a30981a5444, type: 3}
+  - name: CableGameOpening
+    clip: {fileID: 8300000, guid: 1388afaf31b18034eb819a30981a5444, type: 3}
+  musicSource: {fileID: 1502540899}
+  sfxSource: {fileID: 218979675}
 --- !u!1 &1896376640
 GameObject:
   m_ObjectHideFlags: 0
@@ -4048,6 +4568,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Panel_R
       objectReference: {fileID: 0}
+    - target: {fileID: 3886650320324531125, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
+      propertyPath: m_text
+      value: Seems Sam feels peaceful on grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405762022250016900, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -36.935
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405762022250016900, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -18.466
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786059218430072139, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
+      propertyPath: m_fontStyle
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7132819849700563088, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
       propertyPath: m_Pivot.x
       value: 1
@@ -4128,8 +4664,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8275547366010877416, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9058824
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275547366010877416, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275547366010877416, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
+      propertyPath: m_Color.r
+      value: 0.43529415
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2298770101732141931, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: deaf863a30e005547a5c3fd0873aaf97, type: 3}
@@ -4485,6 +5034,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 3886650320324531125, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_text
+      value: Seems Alex has cool car
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405762022250016900, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -34.133
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405762022250016900, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -17.067
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786059218430072139, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_fontStyle
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786059218430072139, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786059218430072139, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786059218430072139, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786059218430072139, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7132819849700563088, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -4567,18 +5148,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8275547366010877416, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
       propertyPath: m_Color.b
-      value: 0.4784314
+      value: 0.9058824
       objectReference: {fileID: 0}
     - target: {fileID: 8275547366010877416, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
       propertyPath: m_Color.g
-      value: 0.4156863
+      value: 0.9215687
       objectReference: {fileID: 0}
     - target: {fileID: 8275547366010877416, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
       propertyPath: m_Color.r
-      value: 0.62352943
+      value: 0.43529415
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2298770101732141931, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c660248e99024d488d3a155edde93e4, type: 3}
@@ -4592,3 +5174,4 @@ SceneRoots:
   - {fileID: 266080502}
   - {fileID: 1639992943}
   - {fileID: 1807752909}
+  - {fileID: 1871650892}

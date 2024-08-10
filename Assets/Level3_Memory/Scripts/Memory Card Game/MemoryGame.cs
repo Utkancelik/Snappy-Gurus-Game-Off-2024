@@ -130,6 +130,7 @@ public class MemoryGame : MonoBehaviour
 
         if (selectedCards[0].transform.GetChild(0).GetComponent<Image>().sprite == selectedCards[1].transform.GetChild(0).GetComponent<Image>().sprite)
         {
+            AudioManager.Instance.PlaySFXClip($"Collect{Random.Range(1,3).ToString()}");
             Sprite matchedSprite = selectedCards[0].transform.GetChild(0).GetComponent<Image>().sprite;
             foreach (Button card in selectedCards)
             {

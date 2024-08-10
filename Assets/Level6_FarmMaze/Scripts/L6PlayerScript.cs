@@ -20,6 +20,7 @@ public class L6PlayerScript : MonoBehaviour
     private void Start()
     {
         _childCount = _fruitsCount.childCount;
+        AudioManager.Instance.PlayMusicClip("Episode6");
     }
 
     void Update()
@@ -48,6 +49,7 @@ public class L6PlayerScript : MonoBehaviour
         
         if (other.gameObject.layer == (int)Layers.Collectable)
         {
+            AudioManager.Instance.PlaySFXClip("Collect1");
             Destroy(other.gameObject);
         }
 

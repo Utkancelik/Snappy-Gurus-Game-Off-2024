@@ -79,6 +79,7 @@ public class UIManager : MonoBehaviour
 
     public void ToggleWinMenu()
     {
+        AudioManager.Instance.PlayMusicClip("Win");
         Time.timeScale = 0;
         _pauseMenuPanelHeader.text = "YOU WIN!";
         _pauseMenuPanel.SetActive(true);
@@ -87,6 +88,7 @@ public class UIManager : MonoBehaviour
     
     public void ToggleLoseMenu()
     {
+        AudioManager.Instance.PlayMusicClip("Lost");
         Time.timeScale = 0;
         _pauseMenuPanelHeader.text = "YOU LOST!";
         _pauseMenuPanel.SetActive(true);

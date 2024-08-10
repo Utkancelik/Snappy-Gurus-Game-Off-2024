@@ -89,6 +89,7 @@ public class CharacterMovement : MonoBehaviour
     {
         if (other.CompareTag("RepairZone"))
         {
+            AudioManager.Instance.PlaySFXClip("CableGameOpening");
             FindObjectOfType<OfficeCableGameController>().StartRepairGame();
         }
     }

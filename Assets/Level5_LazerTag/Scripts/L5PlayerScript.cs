@@ -16,6 +16,11 @@ public class L5PlayerScript : MonoBehaviour
     [SerializeField] private Transform _barrelTransform;
     public EmotionController.Character character;
 
+    private void Start()
+    {
+        AudioManager.Instance.PlayMusicClip("Episode5");
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))

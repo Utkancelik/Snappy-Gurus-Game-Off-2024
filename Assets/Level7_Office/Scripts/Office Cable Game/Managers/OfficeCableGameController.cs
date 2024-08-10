@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Level;
 using TMPro;
@@ -15,10 +16,13 @@ public class OfficeCableGameController : MonoBehaviour
 
     [SerializeField] private GameObject[] levelSpecificObjects;
 
+    [SerializeField] private string musicName;
+
     private void Start()
     {
         DeactivateNeccessaryObjectsAtTheBeginning();
         StartCoroutine(StartBlackOutSequence());
+        AudioManager.Instance.PlayMusicClip(musicName);
     }
 
     private void DeactivateNeccessaryObjectsAtTheBeginning()

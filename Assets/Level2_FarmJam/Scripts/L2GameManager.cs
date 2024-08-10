@@ -1,3 +1,4 @@
+using System;
 using Level;
 using UnityEngine;
 using UnityEngine.Events;
@@ -25,6 +26,11 @@ public class L2GameManager : MonoBehaviour
 
         Instance = this;
         InitializeGameManager();
+    }
+
+    private void Start()
+    {
+        AudioManager.Instance.PlayMusicClip("Episode2");
     }
 
     private void InitializeGameManager()

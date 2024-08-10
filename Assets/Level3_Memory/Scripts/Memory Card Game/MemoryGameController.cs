@@ -13,9 +13,11 @@ public class MemoryGameController : MonoBehaviour
     private static readonly int Walk = Animator.StringToHash("Walk");
 
     [SerializeField] private string _WomenDialogueText;
+    [SerializeField] private string musicName;
     void Start()
     {
         StartCoroutine(StartGameSequence());
+        AudioManager.Instance.PlayMusicClip(musicName);
     }
 
     IEnumerator StartGameSequence()

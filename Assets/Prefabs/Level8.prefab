@@ -800,6 +800,7 @@ MonoBehaviour:
   _endRepairGameButton: {fileID: 8302440425402454562}
   character: 1
   levelSpecificObjects: []
+  musicName: Episode8
 --- !u!1 &4751483483058058277
 GameObject:
   m_ObjectHideFlags: 0

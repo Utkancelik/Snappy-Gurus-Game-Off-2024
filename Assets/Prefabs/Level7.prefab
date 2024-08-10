@@ -251,7 +251,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Click to close
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fe03f7a0fda2bca4baa365999a34ea39, type: 2}
   m_sharedMaterial: {fileID: -8999191759455245602, guid: fe03f7a0fda2bca4baa365999a34ea39, type: 2}
@@ -937,8 +937,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 35.865417, y: 89.81421}
+  m_SizeDelta: {x: 220, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6575500863871915193
 CanvasRenderer:
@@ -1132,6 +1132,14 @@ MonoBehaviour:
   defaultSprite: {fileID: 21300000, guid: 755794309dcb6ff458d08f085bca6a0e, type: 3}
   jumpHeight: 2
   jumpDuration: 0.5
+  blackOutDialogues:
+  - Come on!
+  - Really!
+  - Help Alex!
+  celebrationDialogues:
+  - Thank Alex!
+  - You are Great!
+  - Finally!!
 --- !u!1 &2911389673889955065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1182,6 +1190,14 @@ MonoBehaviour:
   defaultSprite: {fileID: 21300000, guid: a8516b9ac40ec4440a6d5d147c2d2382, type: 3}
   jumpHeight: 2
   jumpDuration: 0.5
+  blackOutDialogues:
+  - Come on!
+  - Really!
+  - Help Alex!
+  celebrationDialogues:
+  - Thank Alex!
+  - You are Great!
+  - Finally!!
 --- !u!1 &2927361372680161476
 GameObject:
   m_ObjectHideFlags: 0
@@ -1752,6 +1768,14 @@ MonoBehaviour:
   defaultSprite: {fileID: 21300000, guid: dcc97e9cef2398a43a7351e8212a7843, type: 3}
   jumpHeight: 2
   jumpDuration: 0.5
+  blackOutDialogues:
+  - Come on!
+  - Really!
+  - Help Alex!
+  celebrationDialogues:
+  - Thank Alex!
+  - You are Great!
+  - Finally!!
 --- !u!1 &6107435050086385777
 GameObject:
   m_ObjectHideFlags: 0
@@ -2014,6 +2038,9 @@ MonoBehaviour:
   _repairGameWindow: {fileID: 8372338169898590249}
   _repairZoneIndicator: {fileID: 8616624238353770868}
   _endRepairGameButton: {fileID: 2031194283336799375}
+  character: 0
+  levelSpecificObjects: []
+  musicName: Episode7
 --- !u!1 &6839230109624057538
 GameObject:
   m_ObjectHideFlags: 0
@@ -2298,6 +2325,7 @@ MonoBehaviour:
   moveSpeed: 2.5
   flashlight: {fileID: 8153479391879360995}
   animator: {fileID: 0}
+  characterName: Alex
 --- !u!61 &7216620790208803528
 BoxCollider2D:
   m_ObjectHideFlags: 0

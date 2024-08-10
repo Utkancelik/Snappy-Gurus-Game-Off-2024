@@ -415,6 +415,7 @@ MonoBehaviour:
   cardPanel: {fileID: 1476389533539705679}
   tablePanel: {fileID: 6435423715212681494}
   _WomenDialogueText: We forgot your order, repeat it!
+  musicName: Episode3
 --- !u!1 &4222059904666837540
 GameObject:
   m_ObjectHideFlags: 0
